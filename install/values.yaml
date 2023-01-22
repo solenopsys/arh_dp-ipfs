@@ -1,0 +1,26 @@
+replicasCount: 1
+fullName: "ipfs-node"
+selectorLabel: "ipfs-node"
+
+domain: "ipfs.solenopsys.org"
+
+service:
+  p2p: 4001 # for the Distributed Hash Table (DHT) communication between nodes.
+  gateway: 8080 # for the IPFS Gateway, which allows users to access IPFS content via a web browser using HTTP.
+  rpc: 5001 # for the IPFS HTTP API, which allows for file operations to be performed through HTTP requests.
+
+storage:
+  staging:
+    volumeName: staging-vol
+    storageSize: 1Gi
+    accessModes: "ReadWriteOnce"
+  data:
+    volumeName: data-vol
+    storageSize: 10Gi
+    accessModes: "ReadWriteOnce"
+
+containers:
+  kobo:
+    name: kubo
+    image: templates/kubo
+    pullPolicy: IfNotPresent
