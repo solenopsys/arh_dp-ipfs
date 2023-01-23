@@ -22,5 +22,5 @@ storage:
 containers:
   kobo:
     name: kubo
-    image: templates/kubo
+    image: ipfs/kubo
     pullPolicy: IfNotPresent

@@ -6,5 +6,5 @@ metadata:
 spec:
   chart: platform-ipfs-node
   targetNamespace: platform
-  version: 0.1.0
+  version: 0.1.1
   repo: https://helm.solenopsys.org
