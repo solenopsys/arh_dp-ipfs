@@ -1,0 +1,10 @@
+apiVersion: helm.cattle.io/v1
+kind: HelmChart
+metadata:
+  name: platform-ipfs-node
+  namespace: kube-system
+spec:
+  chart: platform-ipfs-node
+  targetNamespace: platform
+  version: 0.1.0
+  repo: https://helm.solenopsys.org
