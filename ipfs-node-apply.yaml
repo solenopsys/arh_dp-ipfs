@@ -8,3 +8,9 @@ spec:
   targetNamespace: platform
   version: 0.1.2
   repo: https://helm.solenopsys.org
+  set:
+    bootstrap:
+      alpha: /dns/alpha.bootstrap.solenopsys.org/tcp/4001/ipfs/QmNnooDu7bfjPFoTZYxMNLWUQJyrVwtbZg5gBMjTezGAJN
+      bravo: /dns/bravo.bootstrap.solenopsys.org/tcp/4001/ipfs/QmNnooDu7bfjPFoTZYxMNLWUQJyrVwtbZg5gBMjTezGAJN
+      delta: /dns/delta.bootstrap.solenopsys.org/tcp/4001/ipfs/QmNnooDu7bfjPFoTZYxMNLWUQJyrVwtbZg5gBMjTezGAJN
+

@@ -10,9 +10,9 @@ spec:
     - port: {{ .Values.service.p2p }}
       name: p2p
       targetPort: {{ .Values.service.p2p }}
-    - port: {{ .Values.service.rpc }}
-      name: rpc
-      targetPort: {{ .Values.service.rpc }}
+    - port: {{ .Values.service.gateway }}
+      name: gateway
+      targetPort: {{ .Values.service.gateway }}
   selector:
     app: {{ .Values.selectorLabel }}
 

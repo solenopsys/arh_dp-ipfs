@@ -5,10 +5,12 @@ metadata:
     app: {{ .Values.selectorLabel }}
   name: {{ .Values.fullName}}
 spec:
+  type: NodePort
   ports:
-    - port: {{ .Values.service.gateway }}
-      name: gateway
-      targetPort: {{ .Values.service.gateway }}
+    - port: {{ .Values.service.rpc }}
+      name: rpc
+      targetPort: {{ .Values.service.rpc }}
+      nodePort: 30501
   selector:
     app: {{ .Values.selectorLabel }}
 

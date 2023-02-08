@@ -9,7 +9,7 @@ helm_build_push(){
 
 NAME=platform-ipfs-node
 ARCHS="linux/amd64,linux/arm64"
-VER=0.1.2
+VER=0.1.4
 
 helm_build_push
 

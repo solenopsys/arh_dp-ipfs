@@ -2,7 +2,7 @@ replicasCount: 1
 fullName: "ipfs-node"
 selectorLabel: "ipfs-node"
 
-domain: "ipfs.solenopsys.org"
+domain: "ipfs"
 
 service:
   p2p: 4001 # for the Distributed Hash Table (DHT) communication between nodes.
@@ -24,3 +24,5 @@ containers:
     name: kubo
     image: ipfs/kubo
     pullPolicy: IfNotPresent
+
+bootstrap:
