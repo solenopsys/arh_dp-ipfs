@@ -24,8 +24,20 @@ spec:
           hostPath:
             path: /opt/ipfs-data
             type: Directory
+        - name: swarm-volume
+          configMap:
+            name: swarm-key
+            items:
+              - key: swarm.key
+                path: swarm.key
+        - name: bootstrap-volume
+          configMap:
+            name: ipfs-bootstrap
       containers:
         - image: {{ .Values.containers.kobo.image }}
+          env:
+            - name: LIBP2P_FORCE_PNET
+              value: "1"
           name: {{ .Values.containers.kobo.name }}
           imagePullPolicy: {{ .Values.containers.kobo.pullPolicy }}
           ports:
@@ -37,6 +49,12 @@ spec:
               mountPath: /export
             - name: {{ .Values.storage.data.volumeName }}
               mountPath: /data/ipfs
+            - name: swarm-volume
+              mountPath: /data/ipfs/swarm.key
+              subPath: swarm.key
+              readOnly: true
+            - name: bootstrap-volume
+              mountPath: /container-init.d
   updateStrategy:
     type: RollingUpdate
   volumeClaimTemplates:
@@ -60,4 +78,3 @@ spec:
         resources:
           requests:
             storage: {{ .Values.storage.data.storageSize }}
-

@@ -1,12 +1,12 @@
 apiVersion: helm.cattle.io/v1
 kind: HelmChart
 metadata:
-  name: platform-ipfs-node
+  name: registry-scanner
   namespace: kube-system
 spec:
-  chart: platform-ipfs-node
+  chart: hello
   targetNamespace: default
-  version: 0.1.26
-  repo: https://helm.solenopsys.org
+  version: 0.1.19
+  repo:  https://cloudecho.github.io/charts/
   helmVersion: v3
   failurePolicy: rollback
