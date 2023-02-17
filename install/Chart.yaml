@@ -1,6 +1,6 @@
 apiVersion: v2
 name: platform-ipfs-node
-version: 0.1.32
+version: 0.1.34
 description: Solenopsys platfrom IPFS-node
 icon: "http://alexstorm.solenopsys.org/apps/assets/ipfs-node.svg"
 appVersion: 1.0.0
