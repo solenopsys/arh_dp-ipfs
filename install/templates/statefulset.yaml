@@ -33,6 +33,9 @@ spec:
         - name: bootstrap-volume
           configMap:
             name: ipfs-bootstrap
+            items:
+              - key: bootstrap.sh
+                path: bootstrap.sh
       containers:
         - image: {{ .Values.containers.kobo.image }}
           env:
@@ -54,7 +57,9 @@ spec:
               subPath: swarm.key
               readOnly: true
             - name: bootstrap-volume
-              mountPath: /container-init.d
+              mountPath: /container-init.d/bootstrap.sh
+              subPath: bootstrap.sh
+              readOnly: true
   updateStrategy:
     type: RollingUpdate
   volumeClaimTemplates:

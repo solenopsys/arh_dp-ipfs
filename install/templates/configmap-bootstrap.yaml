@@ -8,8 +8,7 @@ data:
     set -ex
     ipfs bootstrap rm all
     {{- range $key, $value := .Values.bootstrap }}
-    echo {{ $key }}: {{ $value }}
-    ipfs bootstrap add "$value"
+    ipfs bootstrap add "{{ $value }}"
     {{- end }}
 
     ipfs config Routing --json '{ "Type": "{{ .Values.routing }}" }'

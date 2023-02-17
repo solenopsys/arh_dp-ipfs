@@ -28,6 +28,7 @@ containers:
 routing: dhtclient
 
 bootstrap:
-#    - "/dnsaddr/bootstrap.libp2p.io/p2p/QmNnooDu7bfjPFoTZYxMNLWUQJyrVwtbZg5gBMjTezGAJN"
-#    - "/dnsaddr/bootstrap.libp2p.io/p2p/QmQCU2EcMqAqQPR2i9bChDtGNJchTbq5TbXJJ16u19uLTa"
+  - "/ip4/65.0.50.50/tcp/4001/p2p/12D3KooWNFNXDpECyMCYE2gT2FtVF33bB5uC2DwUBxxfdMwWUv9U"
+  - "/dnsaddr/alpha.node.solenopsys.org/p2p/12D3KooWNFNXDpECyMCYE2gT2FtVF33bB5uC2DwUBxxfdMwWUv9U"
 #    - "/dnsaddr/bootstrap.libp2p.io/p2p/QmbLHAnMoJPWSCR5Zhtx6BHJX9KiKNN6tpvbUcqanj75Nb"
+#    - "/ip4/65.0.50.50/tcp/4001/p2p/12D3KooWNFNXDpECyMCYE2gT2FtVF33bB5uC2DwUBxxfdMwWUv9U"
