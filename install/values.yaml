@@ -28,9 +28,9 @@ containers:
 routing: dhtclient
 
 bootstrap:
-  - "/dnsaddr/alpha.node.solenopsys.org/tcp/4001/p2p/12D3KooWNFNXDpECyMCYE2gT2FtVF33bB5uC2DwUBxxfdMwWUv9U"
-  - "/dnsaddr/bravo.node.solenopsys.org/tcp/4001/p2p/12D3KooWQv5AopfEsxxiFbTDtjiKc6WYbGiWogNorNJhEd2FrY6r"
-  - "/dnsaddr/charlie.node.solenopsys.org/tcp/4001/p2p/12D3KooWMWKiMnTPgczZwzPjgXAi8jj47pBg3Tph5YSotrD8H8kk"
+  - "/dns4/alpha-ipfs-node-service.default.svc.cluster.local/tcp/4001/p2p/12D3KooWNFNXDpECyMCYE2gT2FtVF33bB5uC2DwUBxxfdMwWUv9U"
+  - "/dns4/bravo-ipfs-node-service.default.svc.cluster.local/tcp/4001/p2p/12D3KooWQv5AopfEsxxiFbTDtjiKc6WYbGiWogNorNJhEd2FrY6r"
+  - "/dns4/charlie-ipfs-node-service.default.svc.cluster.local/tcp/4001/p2p/12D3KooWMWKiMnTPgczZwzPjgXAi8jj47pBg3Tph5YSotrD8H8kk"
 #  - "/ip4/65.0.50.50/tcp/4001/p2p/12D3KooWNFNXDpECyMCYE2gT2FtVF33bB5uC2DwUBxxfdMwWUv9U"
 #  - "/ip4/43.205.158.231/tcp/4001/p2p/12D3KooWQv5AopfEsxxiFbTDtjiKc6WYbGiWogNorNJhEd2FrY6r"
 #  - "/ip4/65.0.215.244/tcp/4001/p2p/12D3KooWMWKiMnTPgczZwzPjgXAi8jj47pBg3Tph5YSotrD8H8kk"
