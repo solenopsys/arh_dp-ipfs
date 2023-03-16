@@ -16,7 +16,7 @@ spec:
   tls:
     - hosts:
         - {{ .Values.domain }}
-      secretName: zeorssl-registry-secret
+      secretName: zeorssl-ipfs-secret
   rules:
     - host: {{ .Values.domain }}
       http:
