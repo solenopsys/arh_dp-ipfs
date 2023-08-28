@@ -6,6 +6,6 @@ metadata:
 spec:
   chart: platform-ipfs-node
   targetNamespace: default
-  version: 0.1.35
+  version: 0.1.36
   repo: https://helm.solenopsys.org
   helmVersion: v3
