@@ -28,6 +28,6 @@ containers:
 routing: dhtclient
 
 bootstrap:
-  - "/dns4/alpha-ipfs-node-service.default.svc.cluster.local/tcp/4001/p2p/12D3KooWPEcPPkPvyzkysboR31deZMYTpZKqyoCNsRhRNCX2XcnP"
+  - "/dns4/alpha-ipfs-node-service.default.svc.cluster.local/tcp/4001/p2p/12D3KooWL2A1zj6oqVSRtanyZGDwJaEApxcg1JDAaCRbLayQ3aFd"
   - "/dns4/bravo-ipfs-node-service.default.svc.cluster.local/tcp/4001/p2p/12D3KooWHQNAJ2iLFFxpvH9YwE4r9MVMrYoQ9YxiVGY5L3qTJi1w"
-  - "/dns4/charlie-ipfs-node-service.default.svc.cluster.local/tcp/4001/p2p/12D3KooWANr4MWhNVu29KQWSW5T2rbvrgCfbFRAUcwow2yXCjdQ1"
+  - "/dns4/charlie-ipfs-node-service.default.svc.cluster.local/tcp/4001/p2p/12D3KooWCG8XDMrBD8dSpEhoUhVUxAoGh3akYPVXFzKYVJ22yzQK"
